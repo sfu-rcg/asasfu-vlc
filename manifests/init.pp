@@ -27,12 +27,13 @@
 class vlc (
   $ensure_version = 'latest',
   $required_repos = $::vlc::params::required_repos
-) inherits ::vlc::params {
+  ) inherits ::vlc::params {
+
   include ::x264
   package { 'vlc':
     ensure          => "${ensure_version}",
     install_options => { "--enablerepo" => "${required_repos}" },
-    require         => Class[::x264] ],
+    require         => [ Class[::x264] ],
   }
   package { 'vlc-extras':
     ensure          => "${ensure_version}",
