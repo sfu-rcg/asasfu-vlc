@@ -1,7 +1,7 @@
-bbb-aaa
+asasfu-vlc
 ======
 
-aaa Package install with puppet on Centos 6 &amp; 7 - supports repositories and versions
+vlc Package install with puppet on Centos 6 &amp; 7 - supports repositories and versions
 
 Documentation
 -------------
@@ -17,15 +17,15 @@ This module relies on you to ensure the required repos are installed.  They do n
 Developing and Contributing
 ------
 
-We'd love to get contributions from you! 
+We'd love to get contributions from you!
 We're always curious how we can make this more functional and modular for everyone's greater good in systems automation
 
 License
 -------
 
-See [LICENSE](LICENSE) file.
+See LICENSE.md file.
 
 Support
 -------
 
-There is not expectation of support for this module but we will in all attempts work on maintaining it to support our wide uses of linux
+There is no expectation of support for this module but we will in all attempts work on maintaining it to support our wide uses of linux
