@@ -12,9 +12,7 @@ https://github.com/sfu-rcg/
 Installation
 ------------
 
-This module relies on the asasfu-yumrepos module to ensure your repos are installed but they do not need to have enabled=1 as this module was made to support switching repos on only as required by the specific module.
-
-The repos required have been hard coded so this module will have to be maintained as repositories change and new linux distros are released and added.
+This module relies on you to ensure the required repos are installed.  They do not need to have 'enabled=1' as this module was made to support switching repos to 'enabled' only as required by the specific module.
 
 Developing and Contributing
 ------

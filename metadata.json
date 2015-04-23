@@ -23,8 +23,8 @@
   ]
   "dependencies": [
     {
-      "name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"
-      "name":"asasfu-yumrepos","version_requirement":">= 0.1.0"
+      "name":"puppetlabs/stdlib","version_requirement":">= 1.0.0"
+      "name":"asasfu/x264","version_requirement":">= 0.1.0"
     }
   ]
 }

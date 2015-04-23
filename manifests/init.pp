@@ -28,16 +28,14 @@ class vlc (
   $ensure_version = 'latest',
   $required_repos = $::vlc::params::required_repos
 ) inherits ::vlc::params {
-  include ::yumrepos
   include ::x264
   package { 'vlc':
-    ensure => "${ensure_version}",
+    ensure          => "${ensure_version}",
     install_options => { "--enablerepo" => "${required_repos}" },
-    require => [ Class[::yumrepos], Class[::x264] ],
+    require         => Class[::x264] ],
   }
   package { 'vlc-extras':
-    ensure => "${ensure_version}",
+    ensure          => "${ensure_version}",
     install_options => { "--enablerepo" => "${required_repos}" },
-    require => [ Class[::yumrepos] ],
   }
 }
