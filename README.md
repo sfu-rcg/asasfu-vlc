@@ -18,35 +18,28 @@ Usage
 -----
 
 Defaults for this module contains the repo listed in the params class and defaults to latest package version.  This may be overridden in your puppet configs by calling any of the following:
-  ```puppet
-  include vlc
-  Class['vlc'] { 
-    ensure_version  => '2.1.4'
-  }
-  ```
-  or
-  ```puppet
-  include vlc
-  Class['vlc'] {
-    required_repos  => 'epel,nux-dextop'
-  }
-  ```
-You can use one or both values
-  
-Another option is just a single declaration
+
   ```puppet
   class { 'vlc':
     ensure_version  => '2.1.4'
   }
   ```
+  or
 
+  ```puppet
+  class { 'vlc':
+    required_repos  => 'epel,nux-dextop'
+  }
+  ```
+You can use one or both values
+  
 If using hiera or the foreman to provide YAML values
-  <pre>
+  ```yaml 
   ---
   classes:
   vlc:
     ensure_version: 2.1.4-6.el7.nux
-  </pre>
+  ```
 
 In the foreman you can assign an override to the parameters in this class and it will function properly
 
