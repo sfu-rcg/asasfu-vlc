@@ -37,8 +37,8 @@ If using hiera or the foreman to provide YAML values
   ```yaml 
   ---
   classes:
-  vlc:
-    ensure_version: 2.1.4-6.el7.nux
+    vlc:
+      ensure_version: 2.1.4-6.el7.nux
   ```
 
 In the foreman you can assign an override to the parameters in this class and it will function properly
